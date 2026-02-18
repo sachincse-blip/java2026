@@ -1,0 +1,24 @@
+import java.io.;
+import java.util.;
+import java.text.;
+import java.math.;
+import java.util.regex.*;
+
+public class Solution {
+
+public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    char c=sc.next().charAt(0);
+    String s=sc.next();
+    for(int i=0;i<s.length();i++)
+    {
+        if(c==s.charAt(i))
+        {
+            System.out.println("Present");
+                return;
+        }
+    }
+    System.out.println("Not Present");
+    
+}
+}
