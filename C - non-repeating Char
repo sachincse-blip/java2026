@@ -1,0 +1,27 @@
+import java.io.;
+import java.util.;
+import java.text.;
+import java.math.;
+import java.util.regex.*;
+
+public class Solution {
+
+public static void main(String[] args) {
+    Scanner ch = new Scanner(System.in);
+    String s = ch.next();
+    int n,count=0;
+    for(int i=0;i<s.length();i++){
+        count = 0;
+        for(int j=0;j<s.length();j++){
+            if(s.charAt(i)==s.charAt(j)){
+                count++;
+            }
+        }
+        if(count==1){
+            System.out.print(s.charAt(i));
+            break;
+        }
+    }
+    
+}
+}
