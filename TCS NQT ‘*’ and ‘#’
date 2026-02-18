@@ -1,0 +1,30 @@
+import java.io.;
+import java.util.;
+import java.text.;
+import java.math.;
+import java.util.regex.*;
+
+public class Solution {
+
+public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+
+    String s = sc.nextLine();
+    
+    int starCount = 0, hashCount = 0;
+
+    for (char ch : s.toCharArray()) {
+        if (ch == '*') {
+            starCount++;
+        } else if (ch == '#') {
+            hashCount++;
+        }
+    }
+    
+
+    int result = starCount - hashCount;
+
+    System.out.println(result);
+
+}
+}
