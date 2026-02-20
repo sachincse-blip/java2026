@@ -1,0 +1,23 @@
+import java.io.;
+import java.util.;
+import java.text.;
+import java.math.;
+import java.util.regex.*;
+
+public class Solution {
+
+public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    int count=0,rem=0;
+    while(a!=0){
+        rem=a%10;
+        a=a/10;
+      if (rem==b){
+            count++;
+        }
+    }
+    System.out.print(count);
+}
+}
