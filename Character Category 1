@@ -1,0 +1,30 @@
+import java.io.;
+import java.util.;
+import java.text.;
+import java.math.;
+import java.util.regex.*;
+
+public class Solution {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+char c = sc.next().charAt(0);
+
+    if (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
+        System.out.println("Upper Vowel");
+
+    else if (c >= 'A' && c <= 'Z')
+        System.out.println("Upper Consonant");
+
+    else if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
+        System.out.println("Lower Vowel");
+
+    else if (c >= 'a' && c <= 'z')
+        System.out.println("Lower Consonant");
+
+    else if (c >= '0' && c <= '9')
+        System.out.println("Digit");
+
+    else
+        System.out.println("Special Character");
+}
+}
