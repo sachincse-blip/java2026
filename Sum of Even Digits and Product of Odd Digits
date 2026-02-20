@@ -1,0 +1,25 @@
+import java.io.;
+import java.util.;
+import java.text.;
+import java.math.;
+import java.util.regex.*;
+
+public class Solution {
+
+public static void main(String[] args) {
+    Scanner ch = new Scanner(System.in);
+    int a = ch.nextInt();
+    int sum=0,pro=1,rem;
+    while(a!=0){
+        rem = a%10;
+        if(rem%2==0){
+            sum = sum+rem;
+        }
+        else{
+            pro = pro*rem;
+        }
+        a = a/10;
+    }
+    System.out.println(sum + " " + pro); 
+}
+}
