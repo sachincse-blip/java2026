@@ -1,0 +1,17 @@
+mport java.io.;
+import java.util.;
+import java.text.;
+import java.math.;
+import java.util.regex.*;
+
+public class Solution {
+
+public static void main(String[] args) {
+    Scanner ch = new Scanner(System.in);
+    float a = ch.nextFloat();
+    System.out.printf("%f\n",a);
+    System.out.printf("%.4f\n",a);
+    System.out.printf("%.2f\n",a);
+    System.out.printf("%.0f",a);
+}
+}
