@@ -1,0 +1,30 @@
+import java.io.;
+import java.util.;
+import java.text.;
+import java.math.;
+import java.util.regex.*;
+
+public class Solution {
+
+public static void main(String[] args) {
+    Scanner ch = new Scanner(System.in);
+    int a = ch.nextInt();
+    int fact=1,sum=0,temp=a,rem;
+    while(a!=0){
+        rem = a%10;
+        fact=1;
+        for(int i=1;i<=rem;i++){
+            fact=fact*i;
+        }
+        sum=sum+fact;
+        a = a/10;
+
+    }
+     if(sum==temp){
+            System.out.println("Strong Number");
+        }
+        else{
+             System.out.println("Not a strong number");
+        }
+}
+}
